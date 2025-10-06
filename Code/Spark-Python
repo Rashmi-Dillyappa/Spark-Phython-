@@ -1,0 +1,7 @@
+data = [("James", 34, "New York"), ("Anna", 30, "London"), ("Bob", 23, "San Francisco")]
+
+df = spark.createDataFrame (data,schema = ["name","age","city"])
+
+df.show() 
+
+display(df)
